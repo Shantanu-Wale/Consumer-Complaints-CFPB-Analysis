@@ -1,5 +1,3 @@
-**Shantanu Rudresh Wale**  
-📧 wale.shantanu2001@gmail.com 
 
 **Dataset sourced from the US Consumer Financial Protection Bureau (CFPB) public complaints database.**
 
