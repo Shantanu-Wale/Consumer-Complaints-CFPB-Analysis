@@ -1,4 +1,4 @@
-# Consumer Financial Complaints Analysis — CFPB USA
+# 📊 Consumer Financial Complaints Analysis — CFPB USA
 
 > **Tools:** SQL · MySQL Workbench · Power BI  
 > **Dataset:** US Consumer Financial Protection Bureau (CFPB) — Jan & Feb 2023  
@@ -6,7 +6,7 @@
 
 ---
 
-## Project Overview
+## 📌 Project Overview
 
 This project analyses real consumer financial complaint data published by the **US Consumer Financial Protection Bureau (CFPB)** — a government agency that supervises banks, lenders, and other financial companies.
 
@@ -14,7 +14,7 @@ The goal was to identify complaint patterns, pinpoint high-risk products and sta
 
 ---
 
-## Dataset Details
+## 🗂️ Dataset Details
 
 | Attribute | Details |
 |---|---|
@@ -27,7 +27,7 @@ The goal was to identify complaint patterns, pinpoint high-risk products and sta
 
 ---
 
-## Key Business Questions Answered
+## 🔑 Key Business Questions Answered
 
 | # | Question | Finding |
 |---|---|---|
@@ -42,7 +42,7 @@ The goal was to identify complaint patterns, pinpoint high-risk products and sta
 
 ---
 
-## SQL Techniques Used
+## 🛠️ SQL Techniques Used
 
 - `GROUP BY` with `COUNT` and `SUM` for aggregations
 - `WINDOW FUNCTIONS` — `SUM() OVER(PARTITION BY ...)` for running totals
@@ -54,26 +54,41 @@ The goal was to identify complaint patterns, pinpoint high-risk products and sta
 
 ---
 
-## Power BI Dashboard — 4 Pages
+## 📈 Power BI Dashboard — 4 Pages
 
 ### Page 1 — Complaints Overview
-- KPI Cards: Total Complaints, Timely Response %, Delayed Response %, Unique Products, Total States
-- Monthly complaints trend line chart with product filter slicer
+![Complaints Overview](C_Page_1.png)
 
-### Page 2 — Products & Sub-Products
-- 100% stacked bar chart showing sub-product complaint distribution across all 9 product categories
-
-### Page 3 — Complaint Channels & Response Time
-- Horizontal bar chart: complaints by submission channel
-- Donut chart: timely response breakdown (88% Yes · 12% No)
-
-### Page 4 — Top States & Company Response
-- Donut chart: top 5 states by complaint share (CA: 42.25%)
-- Donut chart: company response types (68.62% closed with explanation · 20.84% closed with monetary relief)
+- KPI Cards: Total Complaints (1,183), Timely Response % (87.24), Delayed Response % (12.76), Unique Products (9), Total States (45)
+- Monthly complaints trend line chart with interactive product filter slicer
 
 ---
 
-## Key Insights
+### Page 2 — Products & Sub-Products
+![Products and Sub-Products](C_Page_2.png)
+
+- 100% stacked bar chart showing sub-product complaint distribution across all 9 product categories
+- Reveals internal complexity of each product — Money Transfer has 10 distinct sub-products
+
+---
+
+### Page 3 — Complaint Channels & Response Time
+![Complaint Channels and Response Time](C_Page_3.png)
+
+- Horizontal bar chart: complaints by submission channel — Web dominates at 1,972
+- Donut chart: timely response breakdown — 88% Yes · 12% No (273 delayed)
+
+---
+
+### Page 4 — Top States & Company Response
+![Top States and Company Response](C_Page_4.png)
+
+- Donut chart: top 5 states by complaint share — CA leading at 42.25% (491 complaints)
+- Donut chart: company response types — 68.62% closed with explanation · 20.84% closed with monetary relief
+
+---
+
+## 💡 Key Insights
 
 1. **Checking/Savings Account** drives 45% of all complaints — highest priority product for resolution improvement
 2. **California alone** accounts for 42.25% of top-5 state complaints and 64 of 273 delayed responses — a geographic hotspot
@@ -83,3 +98,30 @@ The goal was to identify complaint patterns, pinpoint high-risk products and sta
 6. **Money Transfer products** have the most complex sub-product structure (10 distinct types) — highest operational complexity
 
 ---
+
+## 📁 Repository Structure
+
+```
+consumer-complaints-cfpb-analysis/
+│
+├── Consumer_Complaints_SQL.csv       # Raw dataset
+├── complaints_analysis.sql           # Full SQL script with all queries
+├── C_Page_1.png                      # Dashboard — Complaints Overview
+├── C_Page_2.png                      # Dashboard — Products & Sub-Products
+├── C_Page_3.png                      # Dashboard — Channels & Response Time
+├── C_Page_4.png                      # Dashboard — Top States & Company Response
+└── README.md
+```
+
+---
+
+## 👤 Author
+
+**Shantanu Rudresh Wale**  
+Data Analyst | Pune, Maharashtra  
+📧 wale.shantanu2001@gmail.com  
+🔗 [GitHub Profile](https://github.com/Shantanu-Wale)
+
+---
+
+*Dataset sourced from the US Consumer Financial Protection Bureau (CFPB) public complaints database.*
