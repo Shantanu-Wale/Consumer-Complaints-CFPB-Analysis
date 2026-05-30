@@ -1,7 +1,3 @@
-
-**Dataset sourced from the US Consumer Financial Protection Bureau (CFPB) public complaints database.**
-
-
 # Consumer Financial Complaints Analysis — CFPB USA
 
 > **Tools:** SQL · MySQL Workbench · Power BI  
