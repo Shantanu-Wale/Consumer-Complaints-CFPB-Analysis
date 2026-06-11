@@ -82,23 +82,23 @@ The goal was to identify complaint patterns, pinpoint high-risk products and sta
 
 ---
 
-### Page 3 : Response Performance
-![Response Performance](C_Page_3.png)
-
-- **Issue Severity Matrix** : scatter plot: complaint volume vs avg days to receive, split by timely/not timely response
-- **Delayed Responses by Product** : bar chart: Payday Loan has highest delayed response %; Student Loan lowest
-- **Company Response Matrix** : scatter plot: volume vs resolution time broken down by response type (Closed with explanation, monetary relief, non-monetary relief)
-
----
-
-### Page 4 : State Performance & Complaint Channels
-![State Performance and Complaint Channels](C_Page_4.png)
+### Page 3 : State Performance & Complaint Channels
+![State Performance and Complaint Channels](C_Page_3.png)
 
 - **Top States by Complaints** : horizontal bar: CA (491), FL (237), TX (180), NY (155), GA (99)
 - **Most Delayed Response % States** : HI and NH showing ~50% delayed response rate : geographic performance gaps identified
 - **State Wise Complaint Counts MAP** : geographical bubble map showing complaint density across US states : CA, FL, TX clearly visible as hotspots
 - **Timely Response % by Channel** : Web Referral and Referral channels show 100% timely response; Web at 86.85%
 - **Complaints by Submission Channel Donut** : Web: 86.68% · Phone: 7.43% · Referral · Postal Mail · Web Referral
+
+---
+
+### Page 4 : Response Performance
+![Response Performance](C_Page_4.png)
+
+- **Issue Severity Matrix** : scatter plot: complaint volume vs avg days to receive, split by timely/not timely response
+- **Delayed Responses by Product** : bar chart: Payday Loan has highest delayed response %; Student Loan lowest
+- **Company Response Matrix** : scatter plot: volume vs resolution time broken down by response type (Closed with explanation, monetary relief, non-monetary relief)
 
 ---
 
